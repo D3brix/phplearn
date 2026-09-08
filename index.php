@@ -58,9 +58,6 @@ var_dump($test);
 
 <?php
 
-var_dump($test);
-var_dump($test[3][1]);
-
 $test = [1, 'asdas', true, [1, 2, 3]];
 var_dump($test[3][1]);
 
@@ -82,5 +79,4 @@ $test[1] = 99999;
 unset($test[3]);
 var_dump($test);
 
-var_dump($test);
-var_dump($test[3][1]);
+?>
