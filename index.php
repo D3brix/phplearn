@@ -39,6 +39,20 @@ var_dump($test);
 
 ?>
 
+<?php
 
+$test = 10 > 5;
+$test = 10 < 5;
+$test = 10 == 10;
+$test = 10 <= 10;
+$test = 10 >= 10;
+$test = 10 == "10";
+$test = 10 === "10";
+$test = 10 != "10";
+$test = 10 !== "10";
+$test = [] == false;
+$test = 0 == false;
 
+var_dump($test);
 
+?>
