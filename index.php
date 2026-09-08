@@ -8,8 +8,6 @@ $test = false;
 $test = NULL;
 $test = [1, null, true, "lol", 2, 3.2];
 $test = new stdClass();
-$test->name = "Gerru";
-
 
 
 var_dump($test);
@@ -60,20 +58,29 @@ var_dump($test);
 
 <?php
 
-$test = array(1, 2, 3);
-$test = [1, 2, 3];
-$test = array("name" => "Gerru", "age" => 18); 
-$test = ["name" => "Gerru", "age" => 18];
-$test = [1, "asdas", true, [1,2,3]];
+var_dump($test);
+var_dump($test[3][1]);
+
+$test = [1, 'asdas', true, [1, 2, 3]];
+var_dump($test[3][1]);
+
 $test = [
-    "name" => "Gerru",
-    "age" => 18,
-]
-
-
-
-
-
+    1,
+    'name' => 'German',
+    'age' => 18,
+    3,
+    'aadas',
+    true,
+    100 => 'lol',
+    'troll',
+];
+var_dump($test['name']);
+array_push($test, 'added', 'zxvxxzcv', 3);
+$test[] = 'new value';
+$test['name'] = 'German';
+$test[1] = 99999;
+unset($test[3]);
+var_dump($test);
 
 var_dump($test);
 var_dump($test[3][1]);
