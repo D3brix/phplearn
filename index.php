@@ -56,3 +56,24 @@ $test = 0 == false;
 var_dump($test);
 
 ?>
+
+
+<?php
+
+$test = array(1, 2, 3);
+$test = [1, 2, 3];
+$test = array("name" => "Gerru", "age" => 18); 
+$test = ["name" => "Gerru", "age" => 18];
+$test = [1, "asdas", true, [1,2,3]];
+$test = [
+    "name" => "Gerru",
+    "age" => 18,
+]
+
+
+
+
+
+
+var_dump($test);
+var_dump($test[3][1]);
