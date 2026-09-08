@@ -80,3 +80,27 @@ unset($test[3]);
 var_dump($test);
 
 ?>
+
+SS
+
+<?php
+
+$num = 10;
+if ($num > 10) {
+    var_dump('Bigger');
+}
+
+if ($num > 10) {
+    var_dump('Bigger');
+} else {
+    var_dump('Smaller');
+}
+
+if ($num > 10) {
+    var_dump('Bigger');
+} else if ($num < 10) {
+    var_dump('Smaller');
+} else {
+    var_dump('Equal');
+}
+?>
