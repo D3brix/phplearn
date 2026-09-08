@@ -18,6 +18,27 @@ var_dump($test);
 ?>
 
 
+<?php
+
+$test = true;
+$test = false;
+$test = true && false;
+$test = true || false;
+$test = !true;
+$test = (true && false) || false || true;
+$test = (true && false) || false || (true && false);
+$test = true xor false;
+
+
+
+
+var_dump($test);
+
+
+
+
+?>
+
 
 
 
